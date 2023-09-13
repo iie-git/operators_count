@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+use POSIX qw /strftime/;
+for (1...2000000){
+    my $avg=time-rand(1000000);
+    my $fr=strftime ("%Y-%m-%d %H:%M", localtime($avg-rand(1000)));
+    my $to=strftime ("%Y-%m-%d %H:%M", localtime($avg+rand(1000)));
+    print ("FROM:$fr TO:$to \n");
+}
