@@ -11,6 +11,9 @@ FROM:2021-01-30 22:18 TO:2021-01-30 22:31
 ```
 
 ###Запуск
+
 chmod +x logs_gen
+
 ./logs_gen > log.txt
+
 python operators_count.py -f ./log.txt
